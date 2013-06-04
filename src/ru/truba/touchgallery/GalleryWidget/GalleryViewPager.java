@@ -82,9 +82,9 @@ public class GalleryViewPager extends ViewPager {
 
     @Override
     public boolean onInterceptTouchEvent(MotionEvent event) {
-        if ((event.getAction() & MotionEvent.ACTION_MASK) == MotionEvent.ACTION_UP)
-        {
-            super.onInterceptTouchEvent(event);
+        boolean ret = super.onInterceptTouchEvent(event);
+        if (ret || mCurrentView.minScale != mCurrentView.saveScale ) {
+            getParent().requestDisallowInterceptTouchEvent(true);
         }
 
         float [] difference = handleMotionEvent(event);

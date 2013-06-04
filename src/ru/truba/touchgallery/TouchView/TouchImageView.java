@@ -64,7 +64,16 @@ public class TouchImageView extends ImageView {
     float[] m;
     float matrixX, matrixY;
 
+    public float getSaveScale() {
+        return saveScale;
+    }
+
     float saveScale = 1f;
+
+    public float getMinScale() {
+        return minScale;
+    }
+
     float minScale = 1f;
     float maxScale = 3f;
     float oldDist = 1f;
