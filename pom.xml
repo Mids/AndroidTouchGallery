@@ -9,7 +9,7 @@
     <name>AndroidTouchGallery</name>
     <groupId>ru.truba.AndroidTouchGallery</groupId>
     <artifactId>touchgallery</artifactId>
-    <version>1.1</version>
+    <version>1.11</version>
     <packaging>apklib</packaging>
 
     <scm>
